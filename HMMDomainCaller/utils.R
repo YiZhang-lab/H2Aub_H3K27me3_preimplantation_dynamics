@@ -213,7 +213,8 @@ CallPeaksFromTrainedModel <- function(bw_file, hmmmodel,
   refGenome = switch (genome,
                       mm9 = BSgenome.Mmusculus.UCSC.mm9::Mmusculus,
                       mm10 = BSgenome.Mmusculus.UCSC.mm10::Mmusculus,
-                      hg19 = BSgenome.Mmusculus.UCSC.hg19::BSgenome.Mmusculus.UCSC.hg19
+                      hg19 = BSgenome.Hsapiens.UCSC.hg19::Hsapiens,
+                      hg38 = BSgenome.Hsapiens.UCSC.hg38::Hsapiens
   )
   
   if(is.null(refGenome)){
